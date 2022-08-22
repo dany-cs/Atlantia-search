@@ -25,7 +25,7 @@ En este proyecto construirás una página web para visualizar un conjunto (set) 
 
 ### Información Adicional
 - La siguiente liga es del deploy
-https://dany-cs-proyecto-atlantia-search.vercel.app/
+https://dany-cs-project-atlantia-search.vercel.app/
 
 - La siguente liga es del Repository
 https://github.com/dany-cs/Atlantia-search
