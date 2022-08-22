@@ -1,7 +1,7 @@
 import React from 'react';
 import Chart from 'react-apexcharts';
 
-export const PriceEvolution = ({priceData}) => {
+export const PriceEvolution = ({ priceData }) => {
   const xxAmbar = priceData.filter(item =>  item.name === 'Cerveza XX Ambar 325 ml');
   const priceXxAmbar = xxAmbar.map(item =>  item.price);
 
@@ -18,21 +18,21 @@ export const PriceEvolution = ({priceData}) => {
       <div className='PriceEvolution--Line'>
         <Chart
           type='line'
-          width={ 868 }
-          height={ 407 }
+          width={868}
+          height={407}
           id= 'realtime'
           series={[
             {
-              name:'Cerveza XX Ambar 325 ml',
-              data:priceXxAmbar,
+              name: 'Cerveza XX Ambar 325 ml',
+              data: priceXxAmbar,
             },
             {
-              name:'Cerveza XX Lager 355 ml',
-              data:priceXxLager,
+              name: 'Cerveza XX Lager 355 ml',
+              data: priceXxLager,
             },
             {
-              name:'Cerveza Tecate Light 355 ml',
-              data:priceTecateLigth,
+              name: 'Cerveza Tecate Light 355 ml',
+              data: priceTecateLigth,
             },
           ]}
           options={{
@@ -45,10 +45,12 @@ export const PriceEvolution = ({priceData}) => {
               categories: dateXxLager,
             },
             yaxis: {
-              labels: {formatter: (value) => {
+              labels: {
+                formatter: (value) => {
                   return '$'+ value;
-              }},
-            }
+                }
+              },
+            },
           }}
         />
       </div>

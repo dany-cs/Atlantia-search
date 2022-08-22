@@ -27,19 +27,20 @@ export const Home = () => {
             const dataPriceEvolution = await getPriceEvolution();
             dispatch(getDataPriceEvolution(dataPriceEvolution));
         };
+
         fetchData();
     }, [dispatch]);
 
 
-    if (priceData === undefined || beerData === undefined || presenceData === undefined) return;
+    if (priceData === undefined && beerData === undefined && presenceData === undefined) return;
 
     return (
         <div className='Atlantia'>
             <header className='Atlantia--Header'>
-                <img src={ image } alt={ image}/>
+                <img src={ image } alt={ image }/>
             </header>
             <div className='Atlantia--Content'>
-                <h1 className='Atlantia--Title'>General Perfomance Analysis</h1>
+                <h1 className='Atlantia--Title'>General Performance Analysis</h1>
                 <div className='Atlantia--Graphics'>
                     <PriceEvolution
                         priceData={ priceData }
