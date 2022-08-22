@@ -1,6 +1,11 @@
 .PresenceShareProduct {
   &--Wrapper {
     margin-left: 19px;
+
+    @media (max-width: 960px) {
+      margin-left: 0;
+      padding-top: 36px;
+    }
   }
 
   &--Title {

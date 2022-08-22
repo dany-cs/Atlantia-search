@@ -1,4 +1,12 @@
 .PriceEvolution {
+  width: 100%;
+
+  @media (max-width: 960px) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
   &--Title {
     font-size: 24px;
     line-height: 160%;
@@ -7,5 +15,27 @@
   &--Line {
     background: $white;
     max-width: 868px;
+
+    @media (max-width: 1220px) {
+      max-width: 643px;
+    }
+
+    @media (max-width: 960px) {
+      max-width: initial;
+      width: 100%;
+    }
+  }
+
+  &--Graphics {
+    max-width: 868px;
+    width: 100% !important;
+
+    @media (max-width: 1220px) {
+      max-width: 643px !important;
+    }
+
+    @media (max-width: 960px) {
+      max-width: initial !important;
+    }
   }
 }

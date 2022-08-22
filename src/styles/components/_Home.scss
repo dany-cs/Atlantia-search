@@ -11,9 +11,16 @@
   &--Graphics {
     display: flex;
     margin-bottom: 36px;
+
+    @media (max-width: 960px) {
+      align-items: center;
+      flex-direction: column;
+    }
   }
 
   &--Content {
+    margin: 0 auto;
+    max-width: 1440px;
     padding: 21px 28px 121px 28px;
   }
 
@@ -21,5 +28,6 @@
     color: $blue-dark;
     font-size: 40px;
     line-height: 160%;
+    padding-bottom: 44px;
   }
 }

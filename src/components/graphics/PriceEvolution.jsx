@@ -17,10 +17,10 @@ export const PriceEvolution = ({ priceData }) => {
       <h1 className='PriceEvolution--Title'>Price Evolution</h1>
       <div className='PriceEvolution--Line'>
         <Chart
-          type='line'
-          width={868}
+          className='PriceEvolution--Graphics'
           height={407}
           id= 'realtime'
+          type='line'
           series={[
             {
               name: 'Cerveza XX Ambar 325 ml',
